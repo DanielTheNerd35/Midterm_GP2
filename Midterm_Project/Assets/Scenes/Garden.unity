@@ -1571,6 +1571,50 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 18.024483, y: 3.0130622}
   m_EdgeRadius: 0
+--- !u!1 &1745550213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1745550215}
+  - component: {fileID: 1745550214}
+  m_Layer: 0
+  m_Name: Time Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1745550214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745550213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d0ba75c2be755c4ebfd5c4dea1e9406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1745550215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745550213}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2027164475
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,8 +1756,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2110434863}
-  - component: {fileID: 2110434862}
   - component: {fileID: 2110434861}
+  - component: {fileID: 2110434864}
   m_Layer: 0
   m_Name: Plant
   m_TagString: Untagged
@@ -1734,26 +1778,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDragging: 0
---- !u!114 &2110434862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110434860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8e3eaf983bfce644b09873670d82570, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  seedVisual: {fileID: 536677700}
-  moundVisual: {fileID: 2027164475}
-  sproutVisual: {fileID: 380614691}
-  grownVisual: {fileID: 1226203708}
-  plantDelay: 2
-  sproutDelay: 5
-  growDelay: 8
 --- !u!4 &2110434863
 Transform:
   m_ObjectHideFlags: 0
@@ -1774,6 +1798,19 @@ Transform:
   - {fileID: 851077502}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2110434864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110434860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf36a01ee9e7da04b942a87c74586c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  plant: {fileID: 11400000, guid: 9d68bb55febf1bb4ea065f819c7b4a0b, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1783,3 +1820,4 @@ SceneRoots:
   - {fileID: 2063479658}
   - {fileID: 1323325976}
   - {fileID: 2110434863}
+  - {fileID: 1745550215}
