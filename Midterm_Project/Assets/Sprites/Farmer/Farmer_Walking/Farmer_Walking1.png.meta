@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f83d5750672778644972af19f8ebb614
+guid: eea1bc0e40255ae45bb73f09583818c7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -931124597325320162
-    second: WaterCan_0
+      213: -1147392494246486623
+    second: Farmer_Walking1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WaterCan_0
+      name: Farmer_Walking1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 0
-        width: 31
+        width: 12
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e10bbceac1bf313f0800000000000000
-      internalID: -931124597325320162
+      spriteID: 1ad1d7a0b94a310f0800000000000000
+      internalID: -1147392494246486623
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      WaterCan_0: -931124597325320162
+      Farmer_Walking1_0: -1147392494246486623
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
