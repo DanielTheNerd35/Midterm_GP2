@@ -8,10 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1482526103124370129, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
+      propertyPath: ID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482526103124370129, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
+      propertyPath: Name
+      value: Sythe
+      objectReference: {fileID: 0}
     - target: {fileID: 1738491122195769165, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e80252c086d26e847987e72c031f8e26, type: 3}
+    - target: {fileID: 3340899591755136623, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
+      propertyPath: bounceHeight
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3792456501407381251, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5

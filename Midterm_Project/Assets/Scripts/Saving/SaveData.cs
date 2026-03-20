@@ -10,4 +10,5 @@ public class SaveData
     // \/ that is for remembering map boundaries if I want to do something with that later
     //public string mapBoundary; 
     public List<InventorySaveData> inventorySaveData;
+    public List<InventorySaveData> hotbarSaveData;
 }
