@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class HotbarController : MonoBehaviour
 {
+    public Item currentlyUsedItem;
     public GameObject hotbarPanel;
     public GameObject slotPrefab;
     public int slotCount = 10; // 1-0 on the keyboard
@@ -39,17 +40,16 @@ public class HotbarController : MonoBehaviour
         }
     }
 
-    void UseItemInSlot(int index)
+    public void UseItemInSlot(int index)
     {
         Slot slot = hotbarPanel.transform.GetChild(index).GetComponent<Slot>();
         if (slot.currentItem != null)
         {
             Item item = slot.currentItem.GetComponent<Item>();
+
+            currentlyUsedItem = item;
+            
             item.UseItem();
-            if (item.ID == 2)
-            {
-                Debug.Log("Watering!");
-            }
         }
     }
 
