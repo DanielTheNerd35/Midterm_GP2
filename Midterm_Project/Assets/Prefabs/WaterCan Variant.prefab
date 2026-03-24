@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1482526103124370129, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
       propertyPath: ID
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1482526103124370129, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
       propertyPath: Name
@@ -27,6 +27,14 @@ PrefabInstance:
     - target: {fileID: 3340899591755136623, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
       propertyPath: bounceDuration
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3792456501407381251, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3792456501407381251, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3792456501407381251, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x

@@ -43,4 +43,11 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("InputX", moveInput.x);
         anim.SetFloat("InputY", moveInput.y);
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        Item item = collision.gameObject.GetComponent<Item>();
+        Debug.Log("Picked up " + item.Name);
+
+    }
 }

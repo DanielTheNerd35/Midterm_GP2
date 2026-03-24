@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlantLocation : MonoBehaviour
 {
-    public ItemType itemType;
+    //public ItemType itemType;
     private bool playerInRange = false;
     private HotbarController hotbar;
 
@@ -20,8 +20,8 @@ public class PlantLocation : MonoBehaviour
         if (player == null)
         {
             return;
-        }
-               
+        } 
+
         playerInRange = true;
     }
 
@@ -35,16 +35,13 @@ public class PlantLocation : MonoBehaviour
     {
         if (!playerInRange) return;
 
-        if (hotbar.currentlyUsedItem.ID == 2)
-        {
-            Debug.Log("Has WaterCan!");
-        }
+        
     }
 }
 
-public enum ItemType
-{
-    WaterCan,
-    Seed,
-    Tool
-}
+// public enum ItemType
+// {
+//     WaterCan,
+//     Seed,
+//     Tool
+// }
