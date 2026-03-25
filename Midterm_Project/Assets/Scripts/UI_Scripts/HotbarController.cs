@@ -7,6 +7,7 @@ public class HotbarController : MonoBehaviour
 {
     public GameObject hotbarPanel;
     public GameObject slotPrefab;
+    public Transform player;
     public int slotCount = 10; // 1-0 on the keyboard
 
     private ItemDictionary itemDictionary;
@@ -46,7 +47,7 @@ public class HotbarController : MonoBehaviour
         {
             Item item = slot.currentItem.GetComponent<Item>();
             
-            item.UseItem();
+            item.UseItem(player);
         }
     }
 

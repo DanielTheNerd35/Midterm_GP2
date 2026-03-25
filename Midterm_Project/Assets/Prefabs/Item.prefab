@@ -121,6 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   Name: 
+  itemPrefab: {fileID: 5274659070037275250}
+  player: {fileID: 2651319257140751604, guid: 97d1182826c67db46ab00536d2826776, type: 3}
 --- !u!61 &3792456501407381251
 BoxCollider2D:
   m_ObjectHideFlags: 0
