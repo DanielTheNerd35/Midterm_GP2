@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: Name
       value: Water Can
       objectReference: {fileID: 0}
+    - target: {fileID: 1482526103124370129, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
+      propertyPath: toolType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1738491122195769165, guid: 9d29dd312b33c3842aee4c0ad97acdec, type: 3}
       propertyPath: m_Sprite
       value: 

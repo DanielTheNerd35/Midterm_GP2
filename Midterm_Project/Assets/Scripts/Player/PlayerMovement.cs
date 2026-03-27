@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("References")]
     private Rigidbody2D rb;
     private Animator anim;
+    private Item helditem = null;
 
     private Vector2 moveInput;
 
@@ -20,6 +21,11 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         
+    }
+
+    public Item getHeldItem()
+    {
+        return helditem;
     }
 
     // Update is called once per frame
@@ -47,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Item item = collision.gameObject.GetComponent<Item>();
-        Debug.Log("Picked up " + item.Name);
+        Debug.Log("Picked up " + item.toolType);
 
     }
 }
