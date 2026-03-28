@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    private InventoryController inventoryController;
     Transform originalParent;
     CanvasGroup canvasGroup;
 
@@ -16,6 +17,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();
+        inventoryController = GetComponent<InventoryController>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -111,5 +113,7 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
 
         // Destroy the UI one
         Destroy(gameObject);
+
+        inventoryController.RebuildItemCounts();
     }
 }

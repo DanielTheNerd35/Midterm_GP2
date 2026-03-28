@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3dfbf0460f3ddb4293e758d46838f56, type: 3}
+  m_Name: Farming Tasks
+  m_EditorClassIdentifier: 
+  questID: 27107db1-dbb0-432f-9c41-3eb98666da28
+  questName: CollectBerries
+  description: Must collect 3 berries
+  objectives:
+  - objectiveID: 1
+    description: collect 3 blue berries
+    type: 0
+    requiredAmount: 3
+    currentAmount: 0
+  - objectiveID: 2
+    description: collect 3 pink berries
+    type: 0
+    requiredAmount: 3
+    currentAmount: 0
+  - objectiveID: 3
+    description: collect 3 purple berries
+    type: 0
+    requiredAmount: 3
+    currentAmount: 0
+  - objectiveID: 4
+    description: collect 3 red berries
+    type: 0
+    requiredAmount: 3
+    currentAmount: 0
