@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 93f20a45a9eb62d4b8d97be540c85740
+guid: 5489ccaf6c0ab254681f1265614ceeb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1810678200279672507
-    second: PinkSeed_0
+      213: -2015825873862102229
+    second: WaterDrop_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PinkSeed_0
+      name: WaterDrop_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 28
-        height: 31
+        width: 8
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54959cd25cd2fd6e0800000000000000
-      internalID: -1810678200279672507
+      spriteID: b23786b4c095604e0800000000000000
+      internalID: -2015825873862102229
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PinkSeed_0: -1810678200279672507
+      WaterDrop_0: -2015825873862102229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("References")]
     private Rigidbody2D rb;
     private Animator anim;
-    private Item helditem = null;
+    private ToolType heldTool = ToolType.NONE;
+    private SeedType heldSeed = SeedType.NONE;
 
     private Vector2 moveInput;
 
@@ -23,9 +24,20 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
-    public Item getHeldItem()
+    public void SetHeldItem(ToolType tool, SeedType seed)
     {
-        return helditem;
+        heldTool = tool;
+        heldSeed = seed;
+    }
+
+    public ToolType GetHeldTool()
+    {
+        return heldTool;
+    }
+
+    public SeedType GetHeldSeed()
+    {
+        return heldSeed;
     }
 
     // Update is called once per frame
@@ -53,7 +65,17 @@ public class PlayerMovement : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         Item item = collision.gameObject.GetComponent<Item>();
+
+        if (item == null)
+            return;
+
         Debug.Log("Picked up " + item.toolType);
+
+        PlantLocation plant = collision.gameObject.GetComponent<PlantLocation>();
+        if (plant == null)
+        {
+            return;
+        }
 
     }
 }
