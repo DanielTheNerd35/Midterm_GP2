@@ -23,6 +23,8 @@ public class QuestController : MonoBehaviour
         inventoryController.OnInventoryChanged += CheckInventoryForQuest;
     }
 
+    public bool IsQuestActive(string questID) => activateQuests.Exists(q => q.QuestID == questID);
+
     public void CheckInventoryForQuest()
     {
         Dictionary<int, int> itemCounts = inventoryController.GetItemCounts();
