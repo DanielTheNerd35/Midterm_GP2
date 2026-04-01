@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,12 +16,14 @@ public class PlayerMovement : MonoBehaviour
     private SeedType heldSeed = SeedType.NONE;
 
     private Vector2 moveInput;
+    private KeyCode restartKey;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        restartKey = KeyCode.R;
         
     }
 
@@ -44,6 +47,10 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         rb.linearVelocity = moveInput * moveSpeed;
+        if (Input.GetKeyDown (restartKey)) // Restart button
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Makes it so then it will load the current scene it is on. 
+        }
     }
 
     public void Move (InputAction.CallbackContext context)
